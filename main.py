@@ -34,7 +34,13 @@ def area_do_triangulo(lado1,lado2):
 
 #Calcular a área de um circulo
 def area_do_circulo(raio):
-    return 3.14 * raio ** 2
+    try:
+        return 3.14 * raio ** 2
+    except TypeError:
+        return 'Falha no calculo - Raio não é um número'
+
+def calcular_volume_do_paralelograma(largura, comprimento, altura):
+    return largura * comprimento * altura
 
 if __name__ == '__main__':
     # Garçon - Requisições / Chamadas

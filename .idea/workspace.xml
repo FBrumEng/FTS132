@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="13a6a340-0d67-4e47-848f-f4bc45042124" name="Changes" comment="">
+    <list default="true" id="13a6a340-0d67-4e47-848f-f4bc45042124" name="Changes" comment="Criação da função @calcular_volume_do_paralelograma e e seu respectivo teste unitário">
       <change afterPath="$PROJECT_DIR$/Test/api/test_petstore_user.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/db/massa_caixa.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test/unit/test_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/unit/test_main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +21,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
   </component>
   <component name="ProjectId" id="2140oIDs2o7jPGJh35kciih98Sz" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -122,10 +125,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python tests.Python tests for test_main.testar_calcular_volume_do_paralelograma" />
+        <item itemvalue="Python.test_main" />
         <item itemvalue="Python tests.Python tests for test_main.testar_area_do_circulo" />
         <item itemvalue="Python tests.Python tests for test_main.testar_somar_dois_numeros" />
         <item itemvalue="Python.main" />
-        <item itemvalue="Python.test_main" />
       </list>
     </recent_temporary>
   </component>
@@ -138,6 +141,14 @@
       <option name="presentableId" value="Default" />
       <updated>1637185226356</updated>
     </task>
+    <task id="LOCAL-00001" summary="Criação da função @calcular_volume_do_paralelograma e e seu respectivo teste unitário">
+      <created>1639675895846</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1639675895846</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -151,5 +162,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Criação da função @calcular_volume_do_paralelograma e e seu respectivo teste unitário" />
+    <option name="LAST_COMMIT_MESSAGE" value="Criação da função @calcular_volume_do_paralelograma e e seu respectivo teste unitário" />
   </component>
 </project>

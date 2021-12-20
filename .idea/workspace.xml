@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="13a6a340-0d67-4e47-848f-f4bc45042124" name="Changes" comment="Criação da função @calcular_volume_do_paralelograma e e seu respectivo teste unitário">
+    <list default="true" id="13a6a340-0d67-4e47-848f-f4bc45042124" name="Changes" comment="Adicionada leitura de arquivo csv (massa de dados) para os testes do paralelograma">
       <change afterPath="$PROJECT_DIR$/Test/api/test_petstore_user.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/db/massa_caixa.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/db/user1.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/unit/test_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/unit/test_main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +21,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProblemsViewState">
-    <option name="selectedIndex" value="1" />
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="2140oIDs2o7jPGJh35kciih98Sz" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -37,28 +41,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_main.testar_calcular_volume_do_paralelograma">
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="FTS132" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python tests.Python tests for test_petstore_user.testar_consultar_usuario">
     <configuration name="test_main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="FTS132" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -108,27 +91,41 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_main.testar_somar_dois_numeros" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_petstore_user.testar_consultar_usuario" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="FTS132" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Test/unit" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Test/api" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_main.testar_somar_dois_numeros&quot;" />
+      <option name="_new_target" value="&quot;test_petstore_user.testar_consultar_usuario&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_petstore_user.testar_criar_usuario" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="FTS132" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Test/api" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_petstore_user.testar_criar_usuario&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for test_petstore_user.testar_consultar_usuario" />
+        <item itemvalue="Python tests.Python tests for test_petstore_user.testar_criar_usuario" />
         <item itemvalue="Python tests.Python tests for test_main.testar_calcular_volume_do_paralelograma" />
         <item itemvalue="Python.test_main" />
         <item itemvalue="Python tests.Python tests for test_main.testar_area_do_circulo" />
-        <item itemvalue="Python tests.Python tests for test_main.testar_somar_dois_numeros" />
-        <item itemvalue="Python.main" />
       </list>
     </recent_temporary>
   </component>
@@ -148,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639675895846</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Adicionada leitura de arquivo csv (massa de dados) para os testes do paralelograma">
+      <created>1639747810884</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1639747810884</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -165,6 +169,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Criação da função @calcular_volume_do_paralelograma e e seu respectivo teste unitário" />
-    <option name="LAST_COMMIT_MESSAGE" value="Criação da função @calcular_volume_do_paralelograma e e seu respectivo teste unitário" />
+    <MESSAGE value="Adicionada leitura de arquivo csv (massa de dados) para os testes do paralelograma" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adicionada leitura de arquivo csv (massa de dados) para os testes do paralelograma" />
   </component>
 </project>

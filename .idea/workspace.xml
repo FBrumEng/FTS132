@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="13a6a340-0d67-4e47-848f-f4bc45042124" name="Changes" comment="testes API : criação de usuarios e consultas usando o http requests (POST e GET)">
-      <change afterPath="$PROJECT_DIR$/Test/db/user2.json" afterDir="false" />
+    <list default="true" id="13a6a340-0d67-4e47-848f-f4bc45042124" name="Changes" comment="Criação dos testes da API da PetStore, entidade User, métodos POST, GET , PUT e DELETE">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test/api/test_petstore_user.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/api/test_petstore_user.py" afterDir="false" />
     </list>
@@ -44,21 +43,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_petstore_user.testar_criar_usuario">
-    <configuration name="Python tests for test_main.testar_calcular_volume_do_paralelograma" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="FTS132" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Test/unit" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_main.testar_calcular_volume_do_paralelograma&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python tests.Python tests for test_petstore_user.testar_login_do_usuario">
     <configuration name="Python tests for test_petstore_user.testar_alterar_usuario" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="FTS132" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -87,7 +72,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_petstore_user.testar_criar_usuario" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_petstore_user.testar_consultar_usuario_com_token" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="FTS132" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -97,11 +82,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_petstore_user.testar_criar_usuario&quot;" />
+      <option name="_new_target" value="&quot;test_petstore_user.testar_consultar_usuario_com_token&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_petstore_user.testar_excluir_usuario" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_petstore_user.testar_login_do_usuario" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="FTS132" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -111,17 +96,31 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_petstore_user.testar_excluir_usuario&quot;" />
+      <option name="_new_target" value="&quot;test_petstore_user.testar_login_do_usuario&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_petstore_user.testar_sequencia_de_testes" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="FTS132" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Test/api" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_petstore_user.testar_sequencia_de_testes&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for test_petstore_user.testar_criar_usuario" />
-        <item itemvalue="Python tests.Python tests for test_petstore_user.testar_excluir_usuario" />
+        <item itemvalue="Python tests.Python tests for test_petstore_user.testar_login_do_usuario" />
         <item itemvalue="Python tests.Python tests for test_petstore_user.testar_consultar_usuario" />
+        <item itemvalue="Python tests.Python tests for test_petstore_user.testar_consultar_usuario_com_token" />
+        <item itemvalue="Python tests.Python tests for test_petstore_user.testar_sequencia_de_testes" />
         <item itemvalue="Python tests.Python tests for test_petstore_user.testar_alterar_usuario" />
-        <item itemvalue="Python tests.Python tests for test_main.testar_calcular_volume_do_paralelograma" />
       </list>
     </recent_temporary>
   </component>
@@ -155,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640011099975</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Criação dos testes da API da PetStore, entidade User, métodos POST, GET , PUT e DELETE">
+      <created>1640022141827</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1640022141827</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -175,6 +181,7 @@
     <MESSAGE value="Criação da função @calcular_volume_do_paralelograma e e seu respectivo teste unitário" />
     <MESSAGE value="Adicionada leitura de arquivo csv (massa de dados) para os testes do paralelograma" />
     <MESSAGE value="testes API : criação de usuarios e consultas usando o http requests (POST e GET)" />
-    <option name="LAST_COMMIT_MESSAGE" value="testes API : criação de usuarios e consultas usando o http requests (POST e GET)" />
+    <MESSAGE value="Criação dos testes da API da PetStore, entidade User, métodos POST, GET , PUT e DELETE" />
+    <option name="LAST_COMMIT_MESSAGE" value="Criação dos testes da API da PetStore, entidade User, métodos POST, GET , PUT e DELETE" />
   </component>
 </project>

@@ -1,4 +1,4 @@
-# Biblioteca
+# Bibliotecas
 import pytest       # Framework de Teste Unitário - Engine (Motor do Teste)
 import requests     # Framework de Teste de API - Requests / Responses
 

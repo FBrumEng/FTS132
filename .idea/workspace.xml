@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="13a6a340-0d67-4e47-848f-f4bc45042124" name="Changes" comment="Criação dos testes da API da PetStore, entidade User, métodos POST, GET , PUT e DELETE">
+    <list default="true" id="13a6a340-0d67-4e47-848f-f4bc45042124" name="Changes" comment="Criação da definição de teste do login e informação do tokem para a consulta">
+      <change afterPath="$PROJECT_DIR$/Test/db/pet1.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/api/test_petstore_user.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/api/test_petstore_user.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640022141827</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Criação da definição de teste do login e informação do tokem para a consulta">
+      <created>1640097372551</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1640097372551</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -182,6 +189,7 @@
     <MESSAGE value="Adicionada leitura de arquivo csv (massa de dados) para os testes do paralelograma" />
     <MESSAGE value="testes API : criação de usuarios e consultas usando o http requests (POST e GET)" />
     <MESSAGE value="Criação dos testes da API da PetStore, entidade User, métodos POST, GET , PUT e DELETE" />
-    <option name="LAST_COMMIT_MESSAGE" value="Criação dos testes da API da PetStore, entidade User, métodos POST, GET , PUT e DELETE" />
+    <MESSAGE value="Criação da definição de teste do login e informação do tokem para a consulta" />
+    <option name="LAST_COMMIT_MESSAGE" value="Criação da definição de teste do login e informação do tokem para a consulta" />
   </component>
 </project>

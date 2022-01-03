@@ -1,0 +1,109 @@
+{
+  "id": "c5d1a6a8-ee50-4549-89a4-a74d62411865",
+  "version": "2.0",
+  "name": "Iterasys",
+  "url": "https://iterasys.com.br",
+  "tests": [{
+    "id": "d9e3e842-25f7-4849-9a35-2391143b6072",
+    "name": "Consulta Mantis",
+    "commands": [{
+      "id": "b97850c2-7b8b-4948-86be-0980fa3321c2",
+      "comment": "",
+      "command": "open",
+      "target": "/plataforma/home/index.php?action=initial",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "60e367ae-3118-4d03-8ad8-07d36e73ea4c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ad7e9da1-97ee-4145-900c-549399815216",
+      "comment": "",
+      "command": "click",
+      "target": "id=searchtext",
+      "targets": [
+        ["id=searchtext", "id"],
+        ["css=#searchtext", "css:finder"],
+        ["xpath=//input[@id='searchtext']", "xpath:attributes"],
+        ["xpath=//div[@id='form_search']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "75e220f7-8ea9-4b56-bd7c-d7181755d7e6",
+      "comment": "",
+      "command": "type",
+      "target": "id=searchtext",
+      "targets": [
+        ["id=searchtext", "id"],
+        ["css=#searchtext", "css:finder"],
+        ["xpath=//input[@id='searchtext']", "xpath:attributes"],
+        ["xpath=//div[@id='form_search']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "mantis"
+    }, {
+      "id": "96f7badc-f172-4ef7-8145-7151daf100f6",
+      "comment": "",
+      "command": "click",
+      "target": "id=btn_form_search",
+      "targets": [
+        ["id=btn_form_search", "id"],
+        ["css=#btn_form_search", "css:finder"],
+        ["xpath=//button[@id='btn_form_search']", "xpath:attributes"],
+        ["xpath=//div[@id='form_search']/div/span/button", "xpath:idRelative"],
+        ["xpath=//span/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0ee90239-c8c0-4ad6-a6ec-44b06d5e3403",
+      "comment": "",
+      "command": "click",
+      "target": "css=.comprar",
+      "targets": [
+        ["css=.comprar", "css:finder"],
+        ["xpath=//ul[@id='all_courses_search']/li/a[2]/span", "xpath:idRelative"],
+        ["xpath=//a[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f2672912-c0eb-49ce-9fb7-77b445e889e7",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.item-title",
+      "targets": [
+        ["css=.item-title", "css:finder"],
+        ["xpath=//div[@id='carrinho']/table/tbody/tr[2]/td/div/span", "xpath:idRelative"],
+        ["xpath=//td/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Mantis')]", "xpath:innerText"]
+      ],
+      "value": "Mantis"
+    }, {
+      "id": "c5d085e6-13ce-444a-add6-ebbf66195408",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.new-price",
+      "targets": [
+        ["css=.new-price", "css:finder"],
+        ["xpath=//div[@id='carrinho']/table/tbody/tr[2]/td/div/span[2]", "xpath:idRelative"],
+        ["xpath=//div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'R$ 59,99')]", "xpath:innerText"]
+      ],
+      "value": "R$ 59,99"
+    }]
+  }],
+  "suites": [{
+    "id": "521dfedf-119d-4653-a660-0d86bb3ae57e",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["d9e3e842-25f7-4849-9a35-2391143b6072"]
+  }],
+  "urls": ["https://iterasys.com.br/"],
+  "plugins": []
+}

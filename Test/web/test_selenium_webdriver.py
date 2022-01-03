@@ -1,5 +1,6 @@
 # 1- Importar Bibliotecas
 from selenium import webdriver
+from selenium.webdriver import Keys
 from selenium.webdriver.common.by import By
 import pytest
 
@@ -10,7 +11,7 @@ class Test_Selenium_Webdriver:
     def setup_method(self):
         # Declarar o objeto do Selenium e instanciar como o navegador desejado
         self.driver = webdriver.Chrome('C:/Users/aless/PycharmProjects/Cursos_Iterasys/FTS132/drivers/chrome/versao_96/chromedriver.exe')
-        self.driver.implicitly_wait(3) # O Selenium vai esperar até 3 segs pelos elementos
+        self.driver.implicitly_wait(30) # O Selenium vai esperar até 3 segs pelos elementos
         self.driver.maximize_window()  # Maximizar a janela do navegador
 
     # Definição de Fim - Executa depois do teste
@@ -19,9 +20,13 @@ class Test_Selenium_Webdriver:
         self.driver.quit()
 
     # Definição do Teste
-    def testar_comprar_curso_mantis(self):
+    def testar_comprar_curso_mantis_com_click_na_lupa(self):
         # O Selenium abre a url indicada - site alvo do teste
         self.driver.get('https://www.iterasys.com.br')
+        # O Selenium clica na caixa de pesquisa
+        self.driver.find_element(By.ID, 'searchtext').click()
+        # O Selenium apaga o conteúdo da caixa de pesquisa (bug)
+        self.driver.find_element(By.ID, 'searchtext').clear()
         # O Selenium escreve 'mantis' na caixa de pesquisa
         self.driver.find_element(By.ID, 'searchtext').send_keys('mantis')
         # O Selenium clica no botão da Lupa
@@ -32,3 +37,63 @@ class Test_Selenium_Webdriver:
         assert self.driver.find_element(By.CSS_SELECTOR, 'span.item-title').text == 'Mantis'
         # O Selenium valida o preço do curso no carrinho de compras
         assert self.driver.find_element(By.CSS_SELECTOR, 'span.new-price').text == 'R$ 59,99'
+
+    def testar_comprar_curso_mantis_com_enter(self):
+        # O Selenium abre a url indicada - site alvo do teste
+        self.driver.get('https://www.iterasys.com.br')
+        # O Selenium clica na caixa de pesquisa
+        self.driver.find_element(By.ID, 'searchtext').click()
+        # O Selenium apaga o conteúdo da caixa de pesquisa (bug)
+        self.driver.find_element(By.ID, 'searchtext').clear()
+        # O Selenium escreve 'mantis' na caixa de pesquisa
+        self.driver.find_element(By.ID, 'searchtext').send_keys('mantis')
+        # O Selenium pressiona a tecla Enter
+        self.driver.find_element(By.ID, 'btn_form_search').send_keys(Keys.ENTER)
+        # O Selenium clica em matricule-se
+        self.driver.find_element(By.CSS_SELECTOR, 'span.comprar').click()
+        # O Selenium valida o nome do curso no carrinho de compras
+        assert self.driver.find_element(By.CSS_SELECTOR, 'span.item-title').text == 'Mantis'
+        # O Selenium valida o preço do curso no carrinho de compras
+        assert self.driver.find_element(By.CSS_SELECTOR, 'span.new-price').text == 'R$ 59,99'
+
+    def testar_comprar_curso_ctfl_com_click_na_lupa(self):
+        # O Selenium abre a url indicada - site alvo do teste
+        self.driver.get('https://www.iterasys.com.br')
+        # O Selenium clica na caixa de pesquisa
+        self.driver.find_element(By.ID, 'searchtext').click()
+        # O Selenium apaga o conteúdo da caixa de pesquisa (bug)
+        self.driver.find_element(By.ID, 'searchtext').clear()
+        # O Selenium escreve 'mantis' na caixa de pesquisa
+        self.driver.find_element(By.ID, 'searchtext').send_keys('ctfl')
+        # O Selenium clica no botão da Lupa
+        self.driver.find_element(By.ID, 'btn_form_search').click()
+        # O Selenium clica em matricule-se
+        self.driver.find_element(By.CSS_SELECTOR, 'span.comprar').click()
+        # O Selenium valida o nome do curso no carrinho de compras
+        assert self.driver.find_element(By.CSS_SELECTOR, 'span.item-title').text == 'Preparatório CTFL'
+        # O Selenium valida o preço do curso no carrinho de compras
+        assert self.driver.find_element(By.CSS_SELECTOR, 'span.new-price').text == 'R$ 199,00'
+
+    # Data driven tests - a partir da massa de dados criada
+    @pytest.mark.parametrize('termo, curso, preco',[
+        ('mantis', 'Mantis', 'R$ 59,99'),
+        ('ctfl', 'Preparatório CTFL', 'R$ 199,00'),
+    ])
+
+    def testar_comprar_curso_mantis_com_click_na_lupa(self, termo, curso, preco):
+        # O Selenium abre a url indicada - site alvo do teste
+        self.driver.get('https://www.iterasys.com.br')
+        # O Selenium clica na caixa de pesquisa
+        self.driver.find_element(By.ID, 'searchtext').click()
+        # O Selenium apaga o conteúdo da caixa de pesquisa (bug)
+        self.driver.find_element(By.ID, 'searchtext').clear()
+        # O Selenium escreve 'mantis' na caixa de pesquisa
+        self.driver.find_element(By.ID, 'searchtext').send_keys(termo)
+        # O Selenium clica no botão da Lupa
+        self.driver.find_element(By.ID, 'btn_form_search').click()
+        # O Selenium clica em matricule-se
+        self.driver.find_element(By.CSS_SELECTOR, 'span.comprar').click()
+        # O Selenium valida o nome do curso no carrinho de compras
+        assert self.driver.find_element(By.CSS_SELECTOR, 'span.item-title').text == curso
+        # O Selenium valida o preço do curso no carrinho de compras
+        assert self.driver.find_element(By.CSS_SELECTOR, 'span.new-price').text == preco

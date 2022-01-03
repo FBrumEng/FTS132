@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="13a6a340-0d67-4e47-848f-f4bc45042124" name="Changes" comment="Criação dos testes da API da PetStore, entidades User e Pet, métodos POST, GET , PUT e DELETE.&#10;Criação da definição de teste do login e informação do tokem para a consulta">
-      <change afterPath="$PROJECT_DIR$/Test/web/Export from SeleniumIDE/Iterasys.side" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/web/Export from SeleniumIDE/test_consultaMantis.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/web/test_selenium_ide.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/web/test_selenium_webdriver.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/drivers/chrome/versao_96/chromedriver.exe" afterDir="false" />
+    <list default="true" id="13a6a340-0d67-4e47-848f-f4bc45042124" name="Changes" comment="Criação dos testes Web utilizando Selenium Webdriver (via IDE e Python)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/web/test_selenium_webdriver.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/web/test_selenium_webdriver.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,36 +43,8 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_selenium_webdriver.Test_Selenium_Webdriver.testar_comprar_curso_mantis">
-    <configuration name="Python tests for test_petstore_pet.testar_incluir_pet" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="FTS132" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Test/api" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_petstore_pet.testar_incluir_pet&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for test_petstore_user.testar_login_do_usuario" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="FTS132" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Test/api" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_petstore_user.testar_login_do_usuario&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for test_selenium_ide.TestConsultaMantis" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Python tests for test_selenium_webdriver.Test_Selenium_Webdriver.testar_comprar_curso_mantis_com_click_na_lupa">
+    <configuration name="Python tests for test_selenium_webdriver.Test_Selenium_Webdriver" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="FTS132" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -86,11 +54,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_selenium_ide.TestConsultaMantis&quot;" />
+      <option name="_new_target" value="&quot;test_selenium_webdriver.Test_Selenium_Webdriver&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_selenium_ide.TestConsultaMantis.test_consultaMantis" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_selenium_webdriver.Test_Selenium_Webdriver.testar_comprar_curso_ctfl_com_click_na_lupa" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="FTS132" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -100,7 +68,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_selenium_ide.TestConsultaMantis.test_consultaMantis&quot;" />
+      <option name="_new_target" value="&quot;test_selenium_webdriver.Test_Selenium_Webdriver.testar_comprar_curso_ctfl_com_click_na_lupa&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -118,13 +86,41 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests for test_selenium_webdriver.Test_Selenium_Webdriver.testar_comprar_curso_mantis_com_click_na_lupa" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="FTS132" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Test/web" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_selenium_webdriver.Test_Selenium_Webdriver.testar_comprar_curso_mantis_com_click_na_lupa&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_selenium_webdriver.Test_Selenium_Webdriver.testar_comprar_curso_mantis_com_enter" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="FTS132" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Test/web" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_selenium_webdriver.Test_Selenium_Webdriver.testar_comprar_curso_mantis_com_enter&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for test_selenium_webdriver.Test_Selenium_Webdriver.testar_comprar_curso_mantis_com_click_na_lupa" />
+        <item itemvalue="Python tests.Python tests for test_selenium_webdriver.Test_Selenium_Webdriver.testar_comprar_curso_ctfl_com_click_na_lupa" />
+        <item itemvalue="Python tests.Python tests for test_selenium_webdriver.Test_Selenium_Webdriver.testar_comprar_curso_mantis_com_enter" />
+        <item itemvalue="Python tests.Python tests for test_selenium_webdriver.Test_Selenium_Webdriver" />
         <item itemvalue="Python tests.Python tests for test_selenium_webdriver.Test_Selenium_Webdriver.testar_comprar_curso_mantis" />
-        <item itemvalue="Python tests.Python tests for test_selenium_ide.TestConsultaMantis" />
-        <item itemvalue="Python tests.Python tests for test_selenium_ide.TestConsultaMantis.test_consultaMantis" />
-        <item itemvalue="Python tests.Python tests for test_petstore_pet.testar_incluir_pet" />
-        <item itemvalue="Python tests.Python tests for test_petstore_user.testar_login_do_usuario" />
       </list>
     </recent_temporary>
   </component>
@@ -193,7 +189,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640118110652</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Criação dos testes Web utilizando Selenium Webdriver (via IDE e Python)">
+      <created>1641218877327</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1641218877327</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -217,6 +220,7 @@
     <MESSAGE value="Criação da definição de teste do login e informação do tokem para a consulta" />
     <MESSAGE value="Criação dos testes da API da PetStore, entidade User, métodos POST, GET , PUT e DELETE.&#10;Criação da definição de teste do login e informação do tokem para a consulta" />
     <MESSAGE value="Criação dos testes da API da PetStore, entidades User e Pet, métodos POST, GET , PUT e DELETE.&#10;Criação da definição de teste do login e informação do tokem para a consulta" />
-    <option name="LAST_COMMIT_MESSAGE" value="Criação dos testes da API da PetStore, entidades User e Pet, métodos POST, GET , PUT e DELETE.&#10;Criação da definição de teste do login e informação do tokem para a consulta" />
+    <MESSAGE value="Criação dos testes Web utilizando Selenium Webdriver (via IDE e Python)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Criação dos testes Web utilizando Selenium Webdriver (via IDE e Python)" />
   </component>
 </project>

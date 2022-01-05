@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="13a6a340-0d67-4e47-848f-f4bc45042124" name="Changes" comment="Criação dos testes Web utilizando Selenium Webdriver (via IDE e Python)">
+    <list default="true" id="13a6a340-0d67-4e47-848f-f4bc45042124" name="Changes" comment="Importação e config do script gerado no selenium IDE. Criação manual do mesmo script no Webdriver.&#10;Uso de uma lista de dados como script de compra de curso.">
+      <change afterPath="$PROJECT_DIR$/prints/2022-01-03 16-17-52/teste 1_passo1_home.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prints/2022-01-03 16-17-52/teste 1_passo2_pesquisa_pelo_curso.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prints/2022-01-03 16-17-52/teste 2_passo1_home.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prints/2022-01-03 16-17-52/teste 2_passo2_pesquisa_pelo_curso.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prints/2022-01-03 16-18-59/teste 1_passo1_home.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prints/2022-01-03 16-18-59/teste 1_passo2_pesquisa_pelo_curso.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prints/2022-01-03 16-18-59/teste 2_passo1_home.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prints/2022-01-03 16-18-59/teste 2_passo2_pesquisa_pelo_curso.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test/web/test_selenium_webdriver.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/web/test_selenium_webdriver.py" afterDir="false" />
     </list>
@@ -196,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641218877327</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Importação e config do script gerado no selenium IDE. Criação manual do mesmo script no Webdriver.&#10;Uso de uma lista de dados como script de compra de curso.">
+      <created>1641230390885</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1641230390885</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -221,6 +236,7 @@
     <MESSAGE value="Criação dos testes da API da PetStore, entidade User, métodos POST, GET , PUT e DELETE.&#10;Criação da definição de teste do login e informação do tokem para a consulta" />
     <MESSAGE value="Criação dos testes da API da PetStore, entidades User e Pet, métodos POST, GET , PUT e DELETE.&#10;Criação da definição de teste do login e informação do tokem para a consulta" />
     <MESSAGE value="Criação dos testes Web utilizando Selenium Webdriver (via IDE e Python)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Criação dos testes Web utilizando Selenium Webdriver (via IDE e Python)" />
+    <MESSAGE value="Importação e config do script gerado no selenium IDE. Criação manual do mesmo script no Webdriver.&#10;Uso de uma lista de dados como script de compra de curso." />
+    <option name="LAST_COMMIT_MESSAGE" value="Importação e config do script gerado no selenium IDE. Criação manual do mesmo script no Webdriver.&#10;Uso de uma lista de dados como script de compra de curso." />
   </component>
 </project>
